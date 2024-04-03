@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 90rem;
+    width: 100%;
+    margin: auto;
+}
+
+.section-banner {
+    background-color: #FEFFF2;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.text-section-banner, .image-section-banner{
+    max-width: 50%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.image-section-banner img {
+    width: 100%;
+}
+
+.circular-img img {
+    border-top-left-radius: 50% 50%; 
+    border-top-right-radius: 50% 50%; 
+    border-bottom-right-radius: 50% 50%; 
+    border-bottom-left-radius: 50% 50%
+}

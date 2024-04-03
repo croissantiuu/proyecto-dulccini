@@ -1,0 +1,23 @@
+.sections-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-nav {
+    max-width: 14.063rem;
+    max-height: 14.063rem;
+    width: auto;
+    height: auto;
+}
+
+.sections-nav-list {
+    display: flex;
+    gap: 3rem;
+}
+
+.header {
+    padding-top: .5rem;
+    background-color: #F9F2E7;
+}
