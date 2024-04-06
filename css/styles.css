@@ -32,10 +32,315 @@
 .image-section-banner img {
     width: 100%;
 }
-
+ 
 .circular-img img {
     border-top-left-radius: 50% 50%; 
     border-top-right-radius: 50% 50%; 
     border-bottom-right-radius: 50% 50%; 
     border-bottom-left-radius: 50% 50%
 }
+
+.lily-script {
+    font-family: "Lily Script One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.page-content {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    background: white
+}
+
+.main-margin-page {
+    display: none; /*Activar después*/
+    width: 98%;
+    height: 5806px;
+    left: 29px;
+    z-index: 100;
+    top: 156px;
+    position: absolute;
+    background: rgba(217, 217, 217, 0);
+    border: 7px rgba(242.25, 217.42, 211.97, 0.34) solid;
+}
+
+/* Start home banner section */
+
+.main-banner-message{
+    width: 526px; 
+    height: 247px;
+    left: 187px;
+    top: 178px;
+    position: absolute;
+    color: #733A70;
+    font-size: 80px;
+    font-family: Lily Script One;
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.banner-image-container {
+    width: 100%;
+    height: 1059px; 
+    left: 674px; 
+    top: -28px; 
+    position: absolute;
+}
+
+.home-banner {
+    width: 100%; 
+    height: 850px; 
+    left: -6px; 
+    position: relative;
+    background: #FEFFF2;
+}
+
+.home-banner-wrapper {
+    width: 100%; 
+    top: 0px; 
+    position: relative; 
+    background: #FEFFF2; 
+    border-radius: 5px;
+}
+/* End home banner section */
+
+/* Start us section */
+
+.us-section-wrapper {
+    width: 100%;
+    height: 851.88px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+
+.client-photo-container.big {
+    width: 490.10px;
+    height: 597.16px;
+    left: 28.99px;
+    top: 29.49px;
+    position: relative;
+    transform: rotate(-3.76deg);
+    transform-origin: 0 0;
+    background: #FEFFF2;
+    border-radius: 25px;
+}
+
+.client-photo-container.big img {
+    width: 435.10px;
+    height: 444.92px;
+    left: 58.30px;
+    position: relative;
+    transform: rotate(-3.76deg);
+    transform-origin: 0 0;
+    border-radius: 10px;
+}
+
+.client-photo-container.big::after {
+    content: '';
+    width: 148.31px;
+    height: 26.52px;
+    left: 121.15px;
+    top: 21.46px;
+    position: absolute;
+    transform: rotate(128.58deg);
+    transform-origin: 0 0;
+    background: #F9F2E7;
+    z-index: 100;
+}
+
+.client-photo-container.big::before {
+    content: '';
+    width: 148.31px;
+    height: 26.52px;
+    left: 429.25px;
+    top: -28.20px;
+    position: absolute;
+    transform: rotate(32.05deg);
+    transform-origin: 0 0;
+    background: #F9F2E7;
+    z-index: 100;
+}
+
+.client-photo-container.medium {
+    width: 354.54px;
+    height: 446.98px;
+    left: 444.68px;
+    top: 322.03px;
+    position: relative;
+    transform: rotate(16.66deg);
+    transform-origin: 0 0;
+}
+
+.client-photo-container.medium div {
+    width: 329.61px;
+    height: 401.61px;
+    left: 5.40px;
+    top: 32.60px;
+    position: relative;
+    transform: rotate(16.66deg);
+    transform-origin: 0 0;
+    background: #F9F2E7;
+    border-radius: 25px;
+}
+
+.client-photo-container.medium img {
+    width: 292.62px;
+    height: 299.22px;
+    left: 17.63px;
+    top: 56.26px;
+    position: relative;
+    transform: rotate(16.66deg);
+    transform-origin: 0 0;
+    border-radius: 10px;
+}
+
+.client-photo-container.medium::after {
+    content: '';
+    width: 99.74px;
+    height: 17.83px;
+    left: 267.28px;
+    top: 79.98px;
+    position: absolute;
+    transform: rotate(57.42deg);
+    transform-origin: 0 0;
+    background: #FEFFF2;
+    z-index: 100;
+}
+
+.client-photo-container.medium::before {
+    content: '';
+    width: 99.74px;
+    height: 17.83px;
+    left: -94.84px;
+    top: 356.98px;
+    position: absolute;
+    transform: rotate(56.68deg);
+    transform-origin: 0 0;
+    background: #FEFFF2;
+    z-index: 100;
+
+}
+
+.us-section-information {
+
+}
+
+.us-section-information h2 {
+    width: 503px; 
+    height: 58px; 
+    left: 813px; 
+    top: 33px; 
+    position: absolute; 
+    text-align: center; 
+    color: #733A70; 
+    font-size: 54px; 
+    font-family: Lily Script One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.us-section-information p {
+    width: 390px; 
+    left: 731px;
+     top: 207px; 
+     position: absolute; 
+     color: #4F2A4D; 
+     font-size: 22px; 
+     font-family: Francois One; 
+     font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.clients-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+/* End us section */
+
+/* Start ondemand slider */
+.on-demand-slider-wrapper {
+    width: 1120px; 
+    height: 556px; 
+    position: relative;
+}
+
+.on-demand-product-container {
+    width: 312px; 
+    height: 421.90px; 
+}
+
+.on-demand-product-photo {
+    width: 312px; 
+    height: 421.90px; 
+}
+.on-demand-product-info {
+    width: 299px; 
+    height: 118px; 
+}
+
+.on-demand-product-info-wrapper, .take-order-btn {
+    width: 299px; 
+    height: 36px; 
+    background: #733A70; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px;
+
+    width: 213px; 
+    height: 25px; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px; 
+    font-family: Francois One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.product-name {
+    width: 213px; 
+    height: 39px; 
+    text-align: center; 
+    color: #4F2A4D; 
+    font-size: 34px; 
+    font-family: Francois One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.product-price {
+    width: 90px; 
+    height: 29px; 
+    text-align: center; 
+    color: #4F2A4D; 
+    font-size: 22px; 
+    font-family: Francois One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.on-demand-product-info {
+    display: flex;
+    flex-direction: column;
+}
+/* End On demand slider */
+
+/* Start Catalog Section */
+.catalog-section-wrapper {
+    position: relative;
+}
+/* End Catalog Section*/
+
+
+
+
+/* page-footer */
+.page-footer {
+    position: relative;
+    bottom: 0;
+}
+/* page-footer */

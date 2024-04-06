@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulccini Cancún</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/68590d1f06ad625cb73b5c34f85b4a1b?family=Luma-Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="content">
+        <!-- Encabezado -->
+        <header class="header">
+            <!-- Barra de Navegación -->
+            <nav class="sections-nav">
+                <img class="logo-nav" src="/web/images/logoDulccini.png" alt="Dulccini">
+                <ul class="sections-nav-list">
+                    <li class="lily-script">Nosotros</li>
+                    <li class="lily-script">Contacto</li>
+                    <li class="lily-script">Catálogo</li>
+                    <li class="lily-script">Pedidos</li>
+                </ul>
+            </nav>
+            <div class="top-links">
+                <ul>
+                    <li>
+                        <i class="fi fi-brands-facebook"></i>
+                    </li>
+                    <li>
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <span></span>
+                    </li>
+                </ul>
+            </div>    
+        </header>
+
+
+
+        <!-- Secciones -->
+        <section id="usSection">
+            <!-- Contenido de la sección 1 -->
+            <div class="section-wrapper section-banner flex">
+                <div class="text-section-banner">
+                    <h1 class="lily-script">Dulce sabor del hogar</h1>
+                </div>
+                <div class="image-section-banner circular-img">
+                    <img src="/web/images/cheescake.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="contactSection">
+            <!-- Contenido de la sección 2 -->
+            <div class="section-wrapper">
+                <div class="image-section">
+
+                </div>
+                <div class="text-section">
+                    <h2>¿Quiénes somos?</h2>
+                    <ul>
+                        <li>
+                            <p>
+
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slider best sellers -->
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="product-slider-info">
+                    <span class="product-image">
+                        <img src="/web/images/chcolate-cake.jpeg" alt="">
+                    </span>
+                    <div class="product-info">
+                        <span class="product-name">Pastel de chocolate</span>
+                        <span class="product-price">$</span>
+                        <a href="#">Hacer pedido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-wrapper section-banner flex">
+            <div class="text-section-banner">
+                <h1>Dulce sabor del hogar</h1>
+            </div>
+            <div class="image-section-banner circular-img">
+                <img src="/web/images/cheescake.jpeg" alt="">
+            </div>
+        </div>
+        <section id="catalogSection">
+            <!-- Contenido de la sección 3 -->
+            <div class="catalog-content-wrapper">
+                <div class="product-slider-info">
+                    <span class="product-image">
+                        <img src="/web/images/chcolate-cake.jpeg" alt="">
+                    </span>
+                    <div class="product-info">
+                        <span class="product-name">Pastel de chocolate</span>
+                        <span class="product-price">$</span>
+                        <a href="#">Hacer pedido</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="orderSection">
+            <!-- Contenido de la sección 4 -->
+        </section>
+
+        <!-- Pie de página -->
+        <footer>
+            <ul class="additional-information-wrapper">
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+                <li>
+                    <span></span>
+                    <span></span>
+                </li>
+            </ul>
+            <div class="footer-content">
+                <img src="/web/images/logoDulccini.png" alt="">
+                <ul>
+                    <li>Dulccini Cancún</li>
+                    <li>Nosotros</li>
+                    <li>Catálogo</li>
+                </ul>
+                <ul>
+                    <li>Servicio al cliente</li>
+                    <li>Contacto</li>
+                    <li>Pedidos</li>
+                </ul>
+                <ul>
+                    <li>
+                        <span></span>
+                        Instagram
+                    </li>
+                    <li>
+                        <span></span>
+                        Facebook
+                    </li>
+                    <li>
+                        <span></span>
+                        Whatsapp
+                    </li>
+                </ul>  
+            </div>
+            <div class="footer-end">
+                <span>© Copyright Dulccini</span>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Se agrega la biblioteca de jquery al proyecto -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </div>
+
+</body>
+</html>
