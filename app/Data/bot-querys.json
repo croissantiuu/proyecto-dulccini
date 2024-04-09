@@ -1,0 +1,38 @@
+{
+    "Hola": {
+        "name": "welcomeIntent",
+        "prompt": "¡Hola!👋<br>Bienvenido a Dulccini. Soy el asistente virtual y estaré aquí para ayudarte en todo momento.",
+        "title": "¿Qué puedo hacer por ti?",
+        "options": ["Soy nuevo aquí", "Necesito ayuda"]
+    },
+    "Necesito ayuda": {
+        "name": "AyudaIntent",
+        "prompt": "¡De acuerdo! Te presento algunas de las consultas más frecuentes de nuestros clientes. Por favor, selecciona la categoría con la que pueda estar relacionada tu solicitud.",
+        "title": "Consultas frecuentes",
+        "options": ["Hacer pedido", "Lugares de entrega"]
+    },
+    "Soy nuevo aquí": {
+        "name": "newCostumerIntent",
+        "prompt": "Test",
+        "title": "¡Gracias por visitar Dulccini Cancún!",
+        "options": ["¡Quiero estar al día con las promociones!", "Información de contacto"]
+    },
+    "Información de contacto": {
+        "name": "contactoIntent",
+        "prompt": "Test",
+        "title": "",
+        "options": []
+    },
+    "Otra solicitud": {
+        "name": "OtroProblemaIntent",
+        "prompt": "Comprendo. Lamento que no encontrara una solicitud adecuada para su caso 🥺. ",
+        "title": "¿Qué desea hacer?",
+        "options": ["Revisar nuevamente las solicitudes", "Solicitar contacto por Whatsapp"] 
+    },
+    "Default": {
+        "name": "DefaultIntent",
+        "prompt": "¡Hola! 👋🤖 Estoy aquí para ayudarte, pero parece que estoy aprendiendo aún más para entender mejor tus necesidades. ¿Puedo ayudarte con algo más mientras sigo mejorando para ser tu asistente ideal? 😊💚",
+        "title": "¿Qué desea hacer?",
+        "options": ["Revisar nuevamente las solicitudes", "Solicitar contacto con un asesor"] 
+    }
+}
