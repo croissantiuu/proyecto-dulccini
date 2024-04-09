@@ -20,6 +20,9 @@
 .header {
     padding-top: .5rem;
     background-color: #F9F2E7;
+    z-index: 100;
+    top: 0;
+    position: sticky;
 }
 
 .sections-nav-list li {
