@@ -112,6 +112,10 @@
     position: relative;
     right: 0;
 }
+
+.main-banner-message-wrapper{
+    padding: 35% 15% 0;
+}
 /* End home banner section */
 
 /* Start us section */
@@ -130,8 +134,8 @@
 .client-photo-container.big {
     width: 490.10px;
     height: 597.16px;
-    left: 28.99px;
-    top: 29.49px;
+    left: 8%;
+    top: 20%;
     position: relative;
     transform: rotate(-3.76deg);
     transform-origin: 0 0;
@@ -142,9 +146,10 @@
 .client-photo-container.big img {
     width: 435.10px;
     height: 444.92px;
-    left: 58.30px;
+    left: 5%;
+    top: 5%;
     position: relative;
-    transform: rotate(-3.76deg);
+    /* transform: rotate(0deg); */
     transform-origin: 0 0;
     border-radius: 10px;
 }
@@ -153,8 +158,8 @@
     content: '';
     width: 148.31px;
     height: 26.52px;
-    left: 121.15px;
-    top: 21.46px;
+    left: 0100px;
+    top: 0;
     position: absolute;
     transform: rotate(128.58deg);
     transform-origin: 0 0;
@@ -166,10 +171,10 @@
     content: '';
     width: 148.31px;
     height: 26.52px;
-    left: 429.25px;
-    top: -28.20px;
+    right: -60px;
+    top: -20px;
     position: absolute;
-    transform: rotate(32.05deg);
+    transform: rotate(52deg);
     transform-origin: 0 0;
     background: #F9F2E7;
     z-index: 100;
@@ -178,8 +183,8 @@
 .client-photo-container.medium {
     width: 354.54px;
     height: 446.98px;
-    left: 444.68px;
-    top: 322.03px;
+    left: 300px;
+    top: -200px;
     position: relative;
     transform: rotate(16.66deg);
     transform-origin: 0 0;
@@ -200,10 +205,10 @@
 .client-photo-container.medium img {
     width: 292.62px;
     height: 299.22px;
-    left: 17.63px;
-    top: 56.26px;
+    left: 5%;
+    top: 5%;
     position: relative;
-    transform: rotate(16.66deg);
+    transform: rotate(-0.34deg);
     transform-origin: 0 0;
     border-radius: 10px;
 }
