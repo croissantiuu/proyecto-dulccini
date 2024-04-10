@@ -1,11 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .chatbot {
-    font-family: 'Poppins';
+    font-family: "Francois One", sans-serif; 
     position: fixed;
     right: 2.5rem;
     bottom: 7.5rem;
@@ -80,7 +74,7 @@
     border-radius: 0.625rem 0.625rem 0 0.625rem;
     max-width: 75%;
     white-space: pre-wrap;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
 }
 
 .chatbox .chat p.error {
