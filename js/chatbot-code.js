@@ -13,7 +13,7 @@ let scrollHeightBefore = chatBox.scrollHeight;
 
 let intents = {};
 
-fetch('/app/Data/bot-querys.json')
+fetch('https://croissantiuu.github.io/proyecto-dulccini/app/Data/bot-querys.json')
     .then(response => response.json())
     .then(data => {
         intents = data;
