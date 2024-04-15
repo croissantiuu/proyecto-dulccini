@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js" integrity="sha512-rFun1mEMg3sNDcSjeGP35cLIycsS+og/QtN6WWnoSviHU9ykMLNQp7D1uuG1AzTV2w0VmyFVpszi2QJwiVW6oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="page-content">
@@ -51,26 +55,34 @@
             <nav class="sections-nav">
                 <img class="logo-nav" src="/web/images/logoDulccini.png" alt="Dulccini"/>
                 <ul class="sections-nav-list">
-                    <li class="lily-script">Nosotros</li>
-                    <li class="lily-script">Contacto</li>
-                    <li class="lily-script">Catálogo</li>
-                    <li class="lily-script">Pedidos</li>
+                    <li class="lily-script"><a href="#us-section">Nosotros</a></li>
+                    <li class="lily-script"><a href="#catalog">Catálogo</a></li>
+                    <li class="lily-script"><a href="#take-order">Pedidos</a></li>
                 </ul>
             </nav>
         </header>
  
         <div class="home-banner">
             <div class="home-banner-wrapper">
-                <div class="main-banner-message-wrapper">
-                    <span class="main-banner-message">Dulce sabor del hogar</span>
-                </div>
+                <span class="main-banner-message">Dulce sabor del hogar</span>
                 <div class="banner-image-container right">
-                    <img src="/web/images/cheescake.jpeg"/>
+                    <div class="fotorama" 
+                        data-fit="cover"
+                        data-loop="true"
+                        data-autoplay="true"
+                        data-transition="slide"
+                        data-clicktransition="crossfade"
+                        data-nav="false"
+                        >
+                        <img src="/web/images/cheescake.jpeg"/>
+                        <img src="/web/images/chcolate-cake.jpeg"/>
+                        <img src="/web/images/Muffins.jpeg"/>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <section class="us-section-wrapper">
+        <section id="us-section" class="us-section-wrapper">
             <div class="clients-photo-wrapper">
                 <div class="client-photo-container big">
                     <img src="/web/images/Cliente1.jpeg"/>
@@ -92,41 +104,74 @@
         </section>
 
         <div class="on-demand-slider-wrapper">
-            <h2 style="width: 503px; height: 58px; text-align: center; color: #733A70; font-size: 60px; font-family: Lily Script One; font-weight: 400; word-wrap: break-word">Lo más pedido</h2>
-            <h2 style="width: 503px; height: 58px; text-align: center; color: rgba(114.75, 57.85, 111.96, 0.05); font-size: 75px; font-family: Lily Script One; font-weight: 400; word-wrap: break-word">Lo más pedido</h2>
+            <h2>Lo más pedido</h2>
             <div class="on-demand-slider-content">
                 <div class="on-demand-product-container">
                     <div class="on-demand-product-photo">
-                        <div style="width: 312px; height: 421.90px; background: #FAF2F0; border-radius: 10px">
-                            <div style="width: 299px; height: 407.66px; background: #FEFFF2; border-radius: 10px">
-                                <div style="width: 284px; height: 277.25px; background: #FAF2F0; border-radius: 10px">
-                                    <img style="width: 276px; height: 268.56px; border-radius: 10px" src="https://via.placeholder.com/276x269" />
-                                </div>
-                            </div>
+                        <div class="product-photo-wrapper">
+                            <img src="/web/images/Muffins.jpeg" />
                         </div>
                     </div>
                     <div class="on-demand-product-info">
                         <span class="product-name">Nombre</span>
-                        <span class="take-order-btn">Hacer pedido<br/></span>
                         <span class="product-price">$ 00.00</span>
+                        <span class="take-order-btn">Hacer pedido<br/></span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="home-banner">
-            <div class="home-banner-wrapper">
-                <span class="main-banner-message">Dulce sabor del hogar</span>
-                <div class="banner-image-container right">
-                    <img src="/web/images/cheescake.jpeg" />
+            <div class="home-banner-wrapper left">
+                <div class="banner-image-container left">
+                    <div class="fotorama" 
+                        data-fit="cover"
+                        data-loop="true"
+                        data-autoplay="true"
+                        data-transition="slide"
+                        data-clicktransition="crossfade"
+                        data-nav="false"
+                        >
+                        <img src="/web/images/cheescake.jpeg"/>
+                        <img src="/web/images/chcolate-cake.jpeg"/>
+                        <img src="/web/images/Muffins.jpeg"/>
+                    </div>
                 </div>
+                <span class="main-banner-message">Dulce sabor del hogar</span>
             </div>
         </div>
         
         <!--Catalog section-->
+        <section id="catalog">
+            <div id="flipbook">
+                <div class="hard"> Turn.js </div>
+                <div class="hard"></div>
+                <div> Page 1 </div>
+                <div> Page 2 </div>
+                <div> Page 3 </div>
+                <div> Page 4 </div>
+                <div class="hard"></div>
+                <div class="hard"></div>
+            </div>
+            <script type="text/javascript">
+                $("#flipbook").turn({
+                    width: 400,
+                    height: 300,
+                    autoCenter: true
+                });
+            </script>
+        </section>
 
-        <section class="take-order-wrapper">
-            
+        <section id="take-order" class="take-order-wrapper">
+            <h2>Hacer pedido</h2>
+            <form class="take-order-form" action="">
+                <input type="text" id="fname" name="fname" placeholder="Nombre:">
+                <input type="text" id="lname" name="lname" placeholder="Apellido(s)">
+                <input type="number" id="phone" name="phone" placeholder="Teléfono: ej. 9928906938">
+                <button>
+                    Hacer pedido
+                </button>
+            </form>
         </section>
 
         <section class="additional-info">

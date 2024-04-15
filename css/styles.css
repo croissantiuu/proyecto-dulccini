@@ -83,6 +83,7 @@
 
 .banner-image-container {
     height: auto; 
+    max-height: 100rem;
     /* left: 674px;  */
     right: 0;
     position: relative;
@@ -105,7 +106,11 @@
     grid-template-columns: 40% 60%;
 }
 
-.banner-image-container.right img {
+.home-banner-wrapper.left {
+    grid-template-columns: 60% 40%;
+}
+
+.banner-image-container.right img, .banner-image-container.left img {
     width: 100%;
     height: auto;
     float: right;
@@ -122,7 +127,7 @@
 
 .us-section-wrapper {
     width: 100%;
-    height: auto;
+    height: 100vh;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -273,29 +278,23 @@
 /* End us section */
 
 /* Start ondemand slider */
-.on-demand-slider-wrapper {
-    width: 80%; 
-    height: 556px; 
-    position: relative;
-}
-
 .on-demand-product-container {
     width: 312px; 
-    height: 421.90px; 
+    height: 100vh;
 }
 
 .on-demand-product-photo {
     width: 312px; 
-    height: 421.90px; 
+    height: auto;
 }
 .on-demand-product-info {
     width: 299px; 
-    height: 118px; 
+    height: auto;
 }
 
 .on-demand-product-info-wrapper, .take-order-btn {
     width: 299px; 
-    height: 36px; 
+    height: auto;
     background: #733A70; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
     border-radius: 10px;
@@ -311,10 +310,10 @@
 }
 
 .product-name {
-    width: 213px; 
-    height: 39px; 
+    width: 100%; 
+    height: auto; 
     text-align: center; 
-    color: #4F2A4D; 
+    color: #4F2A4D;
     font-size: 34px; 
     font-family: "Francois One", sans-serif; 
     font-weight: 400; 
@@ -322,8 +321,8 @@
 }
 
 .product-price {
-    width: 90px; 
-    height: 29px; 
+    width: 100%; 
+    height: auto; 
     text-align: center; 
     color: #4F2A4D; 
     font-size: 22px; 
@@ -332,9 +331,53 @@
     word-wrap: break-word;
 }
 
+.take-order-btn {
+    width: 100%; 
+    height: auto; 
+}
+
 .on-demand-product-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.on-demand-slider-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    margin-bottom: 10rem;
+}
+
+.on-demand-slider-wrapper h2 {
+    text-align: center; 
+    color: #733A70; 
+    font-size: 60px; 
+    font-family: Lily Script One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.product-photo-wrapper {
+    background: #FAF2F0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.product-photo-wrapper img {
+    border-radius: 10px;
+    width: 31.25rem;
+    height: 31.25rem;
+    object-fit: cover;
 }
 /* End On demand slider */
 
@@ -435,3 +478,83 @@
     justify-content: space-between;
 }
 /* page-footer */
+
+/* start take order-form */
+
+.take-order-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #FAF2F0; 
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+.take-order-wrapper h2 {
+    text-align: center; 
+    color: #733A70; 
+    font-size: 60px; 
+    font-family: Lily Script One; 
+    font-weight: 400; 
+    word-wrap: break-word;
+}
+
+.take-order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFFF2;
+    width: 50%;
+    height: 70%;
+    padding: 5%;
+    border-radius: 10px;
+    gap: 8%;
+}
+
+.take-order-form input {
+    background-color: #F9F2E7;
+    border-radius: 10px;
+    border: none;
+    border-bottom: #733A70 solid 3px;
+    height: 2.5rem;
+    width: 80%;
+}
+
+.take-order-form button {
+    padding: 3%;
+    border-radius: 10px;
+    color: white;
+    background-color: #733A70;
+}
+/* end take order-form */
+
+
+/* Start Fotorama slides */
+
+.banner-image-container .fotorama {
+    width: 100% !important;
+}
+.banner-image-container .fotorama .fotorama__wrap {
+    width: 100% !important;
+}
+
+.banner-image-container .fotorama .fotorama__stage {
+    width: 100% !important;
+}
+
+.banner-image-container .fotorama .fotorama__stage .fotorama__stage__shaft {
+    width: 100% !important;
+}
+
+.banner-image-container .fotorama .fotorama__stage .fotorama__stage__frame img {
+    object-fit: cover;
+    width: 100% !important;
+    height: 100% !important;
+    left: unset !important;
+    top: 0px;
+    max-height: 100rem !important;
+}
+/* End Fotorama slides */
