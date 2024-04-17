@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/icons.css">
     <link rel="stylesheet" type="text/css" href="/css/chatBot.css">
+    <link rel="stylesheet" type="text/css" href="/css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js" integrity="sha512-rFun1mEMg3sNDcSjeGP35cLIycsS+og/QtN6WWnoSviHU9ykMLNQp7D1uuG1AzTV2w0VmyFVpszi2QJwiVW6oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
     <div class="page-content">
@@ -38,7 +40,6 @@
                     <li class="chat incoming">
                         <span class="solar--chef-hat-heart-outline"></span>
                         <p>¿Qué tal?&#128075&#129302<br>¡Comencemos con un saludo!<br>Pruebe escribiendo: 'Hola'</p>
-                        <!-- <p>¡Hola! &#128075<br>Bienvenido a Longchamp México. Soy el asistente virtual y estaré aquí para ayudarte en todo momento.</p> -->
                     </li>
                     <div class="chat-input">
                         <textarea placeholder="¡Hola!" required></textarea>
@@ -62,21 +63,23 @@
             </nav>
         </header>
  
-        <div class="home-banner">
+        <div class="home-banner main-banner">
             <div class="home-banner-wrapper main-banner">
-                <span class="main-banner-message">Dulce sabor del hogar</span>
+                <!-- <p>Dulccini presenta ...</p> -->
+                <span class="main-banner-message">Dulce sabor del hogar<a class="go-ahead-btn" href="#us-section"><span class="mdi--navigate-next"></span></a></span>
                 <div class="banner-image-container right">
                     <div class="fotorama" 
                         data-fit="cover"
                         data-loop="true"
-                        data-autoplay="true"
-                        data-transition="slide"
+                        data-autoplay="6000"
+                        data-transition="crossfade"
                         data-clicktransition="crossfade"
                         data-nav="false"
                         >
                         <img src="/web/images/cheescake.jpeg"/>
                         <img src="/web/images/chcolate-cake.jpeg"/>
                         <img src="/web/images/Muffins.jpeg"/>
+                        <img src="/web/images/flan.jpg"/>
                     </div>
                 </div>
             </div>
@@ -110,6 +113,30 @@
                     <div class="on-demand-product-photo">
                         <div class="product-photo-wrapper">
                             <img src="/web/images/Muffins.jpeg" />
+                        </div>
+                    </div>
+                    <div class="on-demand-product-info">
+                        <span class="product-name">Nombre</span>
+                        <span class="product-price">$ 00.00</span>
+                        <span class="take-order-btn">Hacer pedido<br/></span>
+                    </div>
+                </div>
+                <div class="on-demand-product-container">
+                    <div class="on-demand-product-photo">
+                        <div class="product-photo-wrapper">
+                            <img src="/web/images/flan.jpg" />
+                        </div>
+                    </div>
+                    <div class="on-demand-product-info">
+                        <span class="product-name">Nombre</span>
+                        <span class="product-price">$ 00.00</span>
+                        <span class="take-order-btn">Hacer pedido<br/></span>
+                    </div>
+                </div>
+                <div class="on-demand-product-container">
+                    <div class="on-demand-product-photo">
+                        <div class="product-photo-wrapper">
+                            <img src="/web/images/chcolate-cake.jpeg" />
                         </div>
                     </div>
                     <div class="on-demand-product-info">
@@ -230,5 +257,8 @@
     </div>
 </body>
 <script type="text/javascript" src="/js/chatbot-code.js"></script>
+<script type="text/javascript" src="/js/default.js"></script>
 <script type="text/javascript" src="/js/sticky-header.js"></script>
+<script type="text/javascript" src="/js/on-demand-products-slider.js"></script>
+
 </html>

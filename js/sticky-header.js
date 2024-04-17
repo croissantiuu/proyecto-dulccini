@@ -4,7 +4,7 @@ let lastScrollTop = 0;
 $(window).on('scroll', function() {
     let currentScrollTop = $(this).scrollTop(); // Obtenemos la nueva posición del scroll
 
-    if (currentScrollTop > lastScrollTop && currentScrollTop > 300){
+    if (currentScrollTop > lastScrollTop && currentScrollTop > 200){
         header.addClass('header-scrolled');
     } else {
         if(currentScrollTop < 301) {
@@ -18,7 +18,7 @@ $(window).on('scroll', function() {
     });
     
     header.on('mouseleave', function(){
-        if(currentScrollTop < 301) {
+        if(currentScrollTop < 201) {
             $(this).removeClass('header-scrolled');
         }
     });
