@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulccini Cancún</title>
 
-    <link rel="stylesheet" type="text/css" href="https://croissantiuu.github.io/proyecto-dulccini/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://croissantiuu.github.io/proyecto-dulccini/css/header.css">
-    <link rel="stylesheet" type="text/css" href="https://croissantiuu.github.io/proyecto-dulccini/css/icons.css">
-    <link rel="stylesheet" type="text/css" href="https://croissantiuu.github.io/proyecto-dulccini/css/chatBot.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/icons.css">
+    <link rel="stylesheet" type="text/css" href="./css/chatBot.css">
+    <link rel="stylesheet" type="text/css" href="./css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
@@ -20,6 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js" integrity="sha512-rFun1mEMg3sNDcSjeGP35cLIycsS+og/QtN6WWnoSviHU9ykMLNQp7D1uuG1AzTV2w0VmyFVpszi2QJwiVW6oQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
     <div class="page-content">
@@ -31,14 +33,13 @@
             <div class="chatbot">
                 <header>
                     <!-- <h2>Bot de Asistencia</h2> -->
-                    <img class="logo-img" src="https://croissantiuu.github.io/proyecto-dulccini/web/images/logoDulccini.png" alt=""/>
+                    <img class="logo-img" src="./web/images/logoDulccini.png" alt=""/>
                     <span class="custom-chatbot-close-btn material-symbols-outlined">close</span>
                 </header>
                 <ul class="chatbox">
                     <li class="chat incoming">
                         <span class="solar--chef-hat-heart-outline"></span>
                         <p>¿Qué tal?&#128075&#129302<br>¡Comencemos con un saludo!<br>Pruebe escribiendo: 'Hola'</p>
-                        <!-- <p>¡Hola! &#128075<br>Bienvenido a Longchamp México. Soy el asistente virtual y estaré aquí para ayudarte en todo momento.</p> -->
                     </li>
                     <div class="chat-input">
                         <textarea placeholder="¡Hola!" required></textarea>
@@ -50,10 +51,10 @@
 
         <div class="main-margin-page"></div>
         <!-- Header -->
-        <header class="header">
+        <header id="_header" class="header">
             <!-- Barra de Navegación -->
             <nav class="sections-nav">
-                <img class="logo-nav" src="https://croissantiuu.github.io/proyecto-dulccini/web/images/logoDulccini.png" alt="Dulccini"/>
+                <img class="logo-nav" src="./web/images/logoDulccini.png" alt="Dulccini"/>
                 <ul class="sections-nav-list">
                     <li class="lily-script"><a href="#us-section">Nosotros</a></li>
                     <li class="lily-script"><a href="#catalog">Catálogo</a></li>
@@ -62,21 +63,23 @@
             </nav>
         </header>
  
-        <div class="home-banner">
-            <div class="home-banner-wrapper">
-                <span class="main-banner-message">Dulce sabor del hogar</span>
+        <div class="home-banner main-banner">
+            <div class="home-banner-wrapper main-banner">
+                <!-- <p>Dulccini presenta ...</p> -->
+                <span class="main-banner-message">Dulce sabor del hogar<a class="go-ahead-btn" href="#us-section"><span class="mdi--navigate-next"></span></a></span>
                 <div class="banner-image-container right">
                     <div class="fotorama" 
                         data-fit="cover"
                         data-loop="true"
-                        data-autoplay="true"
-                        data-transition="slide"
+                        data-autoplay="6000"
+                        data-transition="crossfade"
                         data-clicktransition="crossfade"
                         data-nav="false"
                         >
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/cheescake.jpeg"/>
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/chcolate-cake.jpeg"/>
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/Muffins.jpeg"/>
+                        <img src="./web/images/cheescake.jpeg"/>
+                        <img src="./web/images/chcolate-cake.jpeg"/>
+                        <img src="./web/images/Muffins.jpeg"/>
+                        <img src="./web/images/flan.jpg"/>
                     </div>
                 </div>
             </div>
@@ -85,11 +88,11 @@
         <section id="us-section" class="us-section-wrapper">
             <div class="clients-photo-wrapper">
                 <div class="client-photo-container big">
-                    <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/Cliente1.jpeg"/>
+                    <img src="./web/images/Cliente1.jpeg"/>
                 </div>
                 <div class="client-photo-container medium">
                     <div>
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/Cliente2.jpeg" />
+                        <img src="./web/images/Cliente2.jpeg" />
                     </div>
                 </div>
             </div>
@@ -109,7 +112,31 @@
                 <div class="on-demand-product-container">
                     <div class="on-demand-product-photo">
                         <div class="product-photo-wrapper">
-                            <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/Muffins.jpeg" />
+                            <img src="./web/images/Muffins.jpeg" />
+                        </div>
+                    </div>
+                    <div class="on-demand-product-info">
+                        <span class="product-name">Nombre</span>
+                        <span class="product-price">$ 00.00</span>
+                        <span class="take-order-btn">Hacer pedido<br/></span>
+                    </div>
+                </div>
+                <div class="on-demand-product-container">
+                    <div class="on-demand-product-photo">
+                        <div class="product-photo-wrapper">
+                            <img src="/web/images/flan.jpg" />
+                        </div>
+                    </div>
+                    <div class="on-demand-product-info">
+                        <span class="product-name">Nombre</span>
+                        <span class="product-price">$ 00.00</span>
+                        <span class="take-order-btn">Hacer pedido<br/></span>
+                    </div>
+                </div>
+                <div class="on-demand-product-container">
+                    <div class="on-demand-product-photo">
+                        <div class="product-photo-wrapper">
+                            <img src="/web/images/chcolate-cake.jpeg" />
                         </div>
                     </div>
                     <div class="on-demand-product-info">
@@ -132,9 +159,9 @@
                         data-clicktransition="crossfade"
                         data-nav="false"
                         >
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/cheescake.jpeg"/>
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/chcolate-cake.jpeg"/>
-                        <img src="https://croissantiuu.github.io/proyecto-dulccini/web/images/Muffins.jpeg"/>
+                        <img src="./web/images/cheescake.jpeg"/>
+                        <img src="./web/images/chcolate-cake.jpeg"/>
+                        <img src="./web/images/Muffins.jpeg"/>
                     </div>
                 </div>
                 <span class="main-banner-message">Dulce sabor del hogar</span>
@@ -197,7 +224,7 @@
 
         <footer class="page-footer">
             <div class="footer-content-wrapper">
-                <img style="width: 252px; height: 155px;" src="https://croissantiuu.github.io/proyecto-dulccini/web/images/logoDulccini.png" />
+                <img style="width: 252px; height: 155px;" src="./web/images/logoDulccini.png" />
                 <div class="page-footer-labels">
                     <ul>
                         <li>Dulccini Cancún</li>
@@ -211,9 +238,9 @@
                     </ul>
                 </div>
                 <ul class="page-footer-social-links">
-                    <li>Instagram<span class="mdi--instagram"></span></li>
-                    <li>Facebook<span class="ic--baseline-facebook"></span></li>
-                    <li>Whatsapp<span class="ic--baseline-whatsapp"></span></li>
+                    <li><span class="mdi--instagram"></span>Instagram</li>
+                    <li><span class="ic--baseline-facebook"></span>Facebook</li>
+                    <li><span class="ic--baseline-whatsapp"></span>Whatsapp</li>
                 </ul>
                 <div class="footer-bottom-info">
                     <div class="footer-bottom-info-wrapper">
@@ -229,5 +256,9 @@
         </footer>
     </div>
 </body>
-<script type="text/javascript" src="https://croissantiuu.github.io/proyecto-dulccini/js/chatbot-code.js"></script>
+<script type="text/javascript" src="./js/chatbot-code.js"></script>
+<script type="text/javascript" src="./js/default.js"></script>
+<script type="text/javascript" src="./js/sticky-header.js"></script>
+<script type="text/javascript" src="./js/on-demand-products-slider.js"></script>
+
 </html>
