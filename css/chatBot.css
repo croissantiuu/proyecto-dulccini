@@ -236,6 +236,7 @@
 }
 
 .chatbot-body-container {
+    transition: .3s;
     position: relative;
     z-index: 11;
 }

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/chcolate-cake.jpeg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/combo-brownies.jpg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/Pastel-op.jpg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/rol-canela.jpg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/Muffins.jpeg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/flan.jpg",
+        "productUrl": "#product1"
+    },
+    {
+        "name": "Producto 1",
+        "price": 100.00,
+        "imageUrl": "./web/images/cheescake.jpeg",
+        "productUrl": "#product1"
+    }
+]
