@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const catalogContent = document.querySelector('.catalog-content');
 
     if(!catalogCreated) {
-        fetch('/app/Data/catalog-products.json')
+        fetch('./app/Data/catalog-products.json')
         .then(response => response.json())
         .then(data => {
             Products = data;
