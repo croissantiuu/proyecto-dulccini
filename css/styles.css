@@ -4,6 +4,46 @@
     padding: 0px;
 }
 
+.animated-text {
+    overflow: hidden;
+    position: relative;
+  }
+
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+.videogame-body-container {
+    transition: .3s;
+    position: relative;
+    z-index: 11;
+}
+
+.videogame-btn, .videogame-btn:focus {
+    position: fixed;
+    left: 2.5rem;
+    bottom: 25px;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #733A70;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+  
 .content {
     max-width: 90rem;
     width: 100vw;
@@ -177,14 +217,23 @@
 
 .us-section-wrapper {
     width: 100%;
-    
+    row-gap: 5rem;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
     margin-bottom: 5rem;
     /*  */
+}
+
+#us-message, #us-message-2 {
+    text-align: center;
+    color: #733A70;
+    font-size: 2rem;
+    font-family: "Francois One", sans-serif; 
+    width: 70%;
 }
 
 .client-photo-container.big {

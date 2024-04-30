@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0"> 
     <title>Dulccini Cancún</title>
 
+    <link rel="icon" type="image/png" sizes="196x196" href="./web/images/logoDulccini.png">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link rel="stylesheet" type="text/css" href="./css/header.css">
     <link rel="stylesheet" type="text/css" href="./css/icons.css">
@@ -25,6 +26,10 @@
 </head>
 <body>
     <div class="page-content">
+        <div class="videogame-body-container">
+            <a id="videogame-link" class="videogame-btn">
+            </a>
+        </div>
         <div class="chatbot-body-container">
             <button class="chatbot-toggler">
                 <span class="uil--comment"></span>
@@ -86,6 +91,11 @@
         </div>
 
         <section id="us-section" class="us-section-wrapper">
+            <div class="us-section-information">
+                <h2>¿Quiénes somos?</h2>
+
+                <blockquote id="us-message"></blockquote>
+            </div>
             <div class="clients-photo-wrapper">
                 <div class="client-photo-container big">
                     <img src="./web/images/Cliente1.jpeg"/>
@@ -97,13 +107,8 @@
                 </div>
             </div>
             <div class="us-section-information">
-                <h2>¿Quiénes somos?</h2>
-
-                <p>Este es un ejemplo de texto para mostrar la misión y visión del emprendimiento Dulccini Cancún</p>
-                <p>Este es un ejemplo de texto para mostrar la misión y visión del emprendimiento Dulccini Cancún</p>
-                <p>Este es un ejemplo de texto para mostrar la misión y visión del emprendimiento Dulccini Cancún</p>
+                <blockquote id="us-message-2"></blockquote>
             </div>
-            
         </section>
 
         <div class="on-demand-slider-wrapper">
@@ -116,8 +121,7 @@
                         </div>
                     </div>
                     <div class="on-demand-product-info">
-                        <span class="product-name">Nombre</span>
-                        <span class="product-price">$ 00.00</span>
+                        <span class="product-name">Cupcakes</span>
                         <a class="take-order-btn" href="#take-order">Hacer pedido</a>
                     </div>
                 </div>
@@ -128,8 +132,7 @@
                         </div>
                     </div>
                     <div class="on-demand-product-info">
-                        <span class="product-name">Nombre</span>
-                        <span class="product-price">$ 00.00</span>
+                        <span class="product-name">Flan de queso de bola</span>
                         <a class="take-order-btn" href="#take-order">Hacer pedido</a>
                     </div>
                 </div>
@@ -140,8 +143,7 @@
                         </div>
                     </div>
                     <div class="on-demand-product-info">
-                        <span class="product-name">Nombre</span>
-                        <span class="product-price">$ 00.00</span>
+                        <span class="product-name">Pastel de chocolate</span>
                         <a class="take-order-btn" href="#take-order">Hacer pedido</a>
                     </div>
                 </div>
@@ -164,7 +166,7 @@
                         <img src="./web/images/Muffins.jpeg"/>
                     </div>
                 </div>
-                <span class="main-banner-message">Dulce sabor del hogar</span>
+                <span class="main-banner-message">¡Dulce sabos del hogar!</span>
             </div>
         </div>
         
@@ -183,7 +185,7 @@
                 <input type="text" id="fname" name="fname" placeholder="Nombre:">
                 <input type="text" id="lname" name="lname" placeholder="Apellido(s)">
                 <input type="number" id="phone" name="phone" placeholder="Teléfono: ej. 9928906938">
-                <button>
+                <button id="take-order-form-btn">
                     Hacer pedido
                 </button>
             </form>
@@ -193,19 +195,19 @@
             <ul class="additional-info-wrapper">
                 <li>
                     <span class="fluent-emoji-high-contrast--shortcake"></span>
-                    <p>Ejemplo de texto remarcando el dulce sabor del hogar</p>
+                    <p>Recetas 100% caseras</p>
                 </li>
                 <li>
                     <span class="ic--baseline-whatsapp"></span>
-                    <p>Ejemplo de texto indicando que los pedidos se toman usando Whatsapp</p>
+                    <p>¡Escríbenos! Te atenderemos con mucho gusto</p>
                 </li>
                 <li>
                     <span class="mdi--location"></span>
-                    <p>Ejemplo de texto remarcando que los pedidos se toman únicamente en Cancún, Quintana Roo</p>
+                    <p>Encuentra nuestra sucursal en Cancún, Quintana Roo</p>
                 </li>
                 <li>
                     <span class="mdi--calendar"></span>
-                    <p>Ejemplo de texto indicando que los pedidos son agendados y están a disponibilidad de entrega</p>
+                    <p>Los pedidos y entregas agendados se encuentran sujetos a disponibilidad</p>
                 </li>
             </ul>
         </section>
