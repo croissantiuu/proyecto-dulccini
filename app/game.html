@@ -3,55 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="196x196" href="../web/images/logoDulccini.png">
+
     <title>Adivina la palabra</title>
     <link rel="stylesheet" type="text/css" href="../css/videoGame.css">
+    <link rel="stylesheet" type="text/css" href="../css/icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 
 </head>
 <body>
+    <button class="info-videogame">
+        <span class="material-symbols--info-outline"></span>
+    </button>
+    <button class="music-on">
+        <span class="teenyicons--sound-on-solid"></span>
+        <span class="teenyicons--sound-off-solid"></span>
+    </button>
+    <div class="popup-info-wrapper hide-btn">
+        <div class="popup-info-body">
+            <h3>Bienvenido al juego de ‘Adivina la Palabra’. El objetivo es simple: descubrir palabras ocultas. Aquí te explicamos cómo jugar:</h3>
+            <br>
+            <br>
+            <p>        
+                1- Tienes un conjunto de letras para elegir. Cuando selecciones una, se revelará si esa letra forma parte de la palabra oculta.
+            </p>
+            <br>
+            <p>
+                2- En total, hay 10 palabras ocultas que debes adivinar.
+            </p>
+            <br>
+            <p>
+                3- Si logras descubrir todas las palabras, ¡recibirás una gran recompensa!
+            </p>
+            <br>
+            <p>
+                Recuerda, cada letra que elijas puede acercarte un paso más a la victoria. ¡Buena suerte!
+            </p>
+        </div>
+        <button class="btn-close">
+            <span class="ic--round-close"></span>
+        </button>
+    </div>
     <div class="videogame-container-wrapper">
+        <h1>Adivina la palabra</h1>
         <span class="word-label"></span>
-        <div class="videogame-body-container">
-            <div class="videogame-image-container">
-                <img class="vg-image" src="" alt="">
+        <div class="videogame-ui-container">
+            <div class="scores-container">
+                <span class="score-label"></span>
+                <span class="score-lost"></span>
             </div>
-            <div class="game-keyboard">
-                <div class="key-row">
-                    <button class="key">Q</button>
-                    <button class="key">W</button>
-                    <button class="key">E</button>
-                    <button class="key">R</button>
-                    <button class="key">T</button>
-                    <button class="key">Y</button>
-                    <button class="key">U</button>
-                    <button class="key">I</button>
-                    <button class="key">O</button>
-                    <button class="key">P</button>
+            <div class="videogame-body-container">
+                <div class="videogame-image-container">
+                    <img class="vg-image" src="" alt="">
                 </div>
-                <div class="key-row">
-                    <button class="key">A</button>
-                    <button class="key">S</button>
-                    <button class="key">D</button>
-                    <button class="key">F</button>
-                    <button class="key">G</button>
-                    <button class="key">H</button>
-                    <button class="key">J</button>
-                    <button class="key">K</button>
-                    <button class="key">L</button>
-                    <button class="key">Ñ</button>
-                </div>
-                <div class="key-row">
-                    <button class="key">Z</button>
-                    <button class="key">X</button>
-                    <button class="key">C</button>
-                    <button class="key">V</button>
-                    <button class="key">B</button>
-                    <button class="key">N</button>
-                    <button class="key">M</button>
+                <div class="game-keyboard">
+                    <div class="key-row">
+                        <button class="key">Q</button>
+                        <button class="key">W</button>
+                        <button class="key">E</button>
+                        <button class="key">R</button>
+                        <button class="key">T</button>
+                        <button class="key">Y</button>
+                        <button class="key">U</button>
+                        <button class="key">I</button>
+                        <button class="key">O</button>
+                        <button class="key">P</button>
+                    </div>
+                    <div class="key-row">
+                        <button class="key">A</button>
+                        <button class="key">S</button>
+                        <button class="key">D</button>
+                        <button class="key">F</button>
+                        <button class="key">G</button>
+                        <button class="key">H</button>
+                        <button class="key">J</button>
+                        <button class="key">K</button>
+                        <button class="key">L</button>
+                        <button class="key">Ñ</button>
+                    </div>
+                    <div class="key-row">
+                        <button class="key">Z</button>
+                        <button class="key">X</button>
+                        <button class="key">C</button>
+                        <button class="key">V</button>
+                        <button class="key">B</button>
+                        <button class="key">N</button>
+                        <button class="key">M</button>
+                    </div>
                 </div>
             </div>
-            <span class="score-label"></span>
         </div>
     </div>
     <script type="text/javascript" src="../js/videoGame.js"></script>

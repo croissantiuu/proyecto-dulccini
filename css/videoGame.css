@@ -8,13 +8,58 @@ body {
     background-color: #FEFFF2;
 }
 
+.music-on {
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.music-on span {
+    font-size: 3rem;
+}
+
+.videogame-btn-hide {
+    bottom: -55px !important;
+}
+
+.popup-info-wrapper {
+    position: absolute;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    background-color: white;
+    z-index: 11;
+    border-radius: 10px;
+    border: 12px solid #733A70;
+    left: 10%;
+    top: 5%;
+}
+.popup-info-body {
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #733A70;
+    font-family: "Francois One", sans-serif; 
+}
+.popup-info-wrapper h3 {
+    font-size: 3rem;
+}
+.popup-info-wrapper p {
+    font-size: 2rem;
+}
+.btn-close {
+
+}
+
 .videogame-container-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
+    margin-top: 5%;
 }
 
 .game-keyboard {
@@ -22,7 +67,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 5%;
     background: white;
     border: #733A70 solid 8px;
     border-radius: 20px;
@@ -37,8 +82,27 @@ body {
     text-align: center;
     font-size: 5rem;
     padding-bottom: 2vh;
-    line-height: 2;
+    line-height: 1;
+    font-family: "Francois One", sans-serif; 
     color: #733A70;
+}
+
+.music-on {
+    position: fixed;
+    right: 2.5rem;
+    bottom: 25px;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #733A70;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
 }
 
 .key {
@@ -49,12 +113,14 @@ body {
     background: #FEFFF2;
     color: #733A70;
     margin: .25rem;
+    font-family: "Francois One", sans-serif; 
     cursor: pointer;
 }
 
 .videogame-image-container {
     display: flex;
     justify-content: center;
+
 }
 
 .vg-image {
@@ -68,10 +134,145 @@ button:disabled {
     filter: brightness(0.8);
 }
 
+h1 {
+    font-size: 4rem;
+    font-family: "Lily Script One", system-ui;
+    font-weight: 400;
+    color: #733A70;
+
+}
+
+.scores-container {
+    position: absolute;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.scores-container span {
+    font-size: 2rem;
+    color: #733A70;
+    font-family: "Francois One", sans-serif; 
+}
+
+.videogame-ui-container {
+    display: flex;
+}
+
+.info-videogame {
+    position: fixed;
+    left: 2.5rem;
+    bottom: 25px;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #733A70;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.info-videogame.videogame-btn-hide::after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m13 30l12-12l12 12'/%3E%3C/svg%3E");
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.btn-close {
+    position: fixed;
+    right: 1.5rem;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #733A70;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.hide-btn {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.info-videogame span {
+    font-size: 3rem;
+}
+
+.icon-park-outline--up {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='4' d='m13 30l12-12l12 12'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
 @media (max-width: 769px) {
     .vg-image {
-        max-width: 20rem;
+        max-width: 15rem;
     }
+
+    .popup-info-wrapper h3 {
+        font-size: 1rem;
+    }
+    .popup-info-wrapper p {
+        font-size: 1rem;
+    }
+
+    .popup-info-wrapper {
+        position: absolute;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 90%;
+        background-color: white;
+        z-index: 11;
+        border-radius: 10px;
+        border: 12px solid #733A70;
+        left: 10%;
+        top: 5%;
+    }
+    .popup-info-body {
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        color: #733A70;
+        font-family: "Francois One", sans-serif; 
+    }
+
     .key {
         width: 1.5rem;
         height: 2.5rem;
@@ -82,7 +283,63 @@ button:disabled {
         margin: .1rem;
         cursor: pointer;
     }
+
+    .word-label {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .videogame-ui-container {
+        flex-flow: wrap;
+        justify-content: center;
+    }
+
+    .scores-container {
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1vh;
+    }
+
+    .scores-container span {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-height: 300px) {
+    .vg-image {
+        max-width: 18rem;
+    }
+
+    .key {
+        width: 2rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border: #FAF2F0 solid 2px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .videogame-container-wrapper {
+        margin-top: 2%;
+    }
+
     .word-label {
         font-size: 3rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .game-keyboard {
+        padding: .5rem;
+        margin-top: 2rem;
     }
 }
