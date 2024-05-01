@@ -12,11 +12,12 @@
     <link rel="stylesheet" type="text/css" href="./css/chatBot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <link href="https://db.onlinewebfonts.com/c/68590d1f06ad625cb73b5c34f85b4a1b?family=Luma-Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
@@ -26,46 +27,20 @@
 </head>
 <body>
     <div class="page-content">
-        <div class="videogame-body-container">
-            <a id="videogame-link" class="videogame-btn">
-            </a>
-        </div>
-        <div class="chatbot-body-container">
-            <button class="chatbot-toggler">
-                <span class="uil--comment"></span>
-                <span class="ic--round-close"></span>
-            </button>
-            <div class="chatbot">
-                <header>
-                    <!-- <h2>Bot de Asistencia</h2> -->
-                    <img class="logo-img" src="./web/images/logoDulccini.png" alt=""/>
-                    <span class="lets-icons--close-round custom-chatbot-close-btn"></span>
-                </header>
-                <ul class="chatbox">
-                    <li class="chat incoming">
-                        <span class="solar--chef-hat-heart-outline"></span>
-                        <p>¿Qué tal?&#128075&#129302<br>¡Comencemos con un saludo!<br>Pruebe escribiendo: 'Hola'</p>
-                    </li>
-                    <div class="chat-input">
-                        <textarea placeholder="¡Hola!" required></textarea>
-                        <span id="send-btn" class="carbon--send-filled"></span>
-                    </div>
-                </ul>
-            </div>
-        </div>
-
-        <div class="main-margin-page"></div>
         <!-- Header -->
         <header id="_header" class="header">
             <!-- Barra de Navegación -->
             <nav class="sections-nav">
                 <img class="logo-nav" src="./web/images/logoDulccini.png" alt="Dulccini"/>
                 <ul class="sections-nav-list">
-                    <li class="lily-script"><a href="#us-section">Nosotros</a></li>
-                    <li class="lily-script"><a href="#catalog">Catálogo</a></li>
-                    <li class="lily-script"><a href="#take-order">Pedidos</a></li>
+                    <li class="lily-script"><a href="#us-section" class="nav-list-link">Nosotros</a></li>
+                    <li class="lily-script"><a href="#catalog" class="nav-list-link">Catálogo</a></li>
+                    <li class="lily-script"><a href="#take-order" class="nav-list-link">Pedidos</a></li>
                 </ul>
             </nav>
+            <button class="menu-mobile hide-element">
+                <span class="material-symbols--menu"></span>
+            </button>
         </header>
  
         <div class="home-banner main-banner">
@@ -211,6 +186,35 @@
                 </li>
             </ul>
         </section>
+
+        <div class="videogame-body-container">
+            <a id="videogame-link" class="videogame-btn">
+                <span class="material-symbols--videogame-asset"></span>
+            </a>
+        </div>
+        <div class="chatbot-body-container">
+            <button class="chatbot-toggler">
+                <span class="uil--comment"></span>
+                <span class="ic--round-close"></span>
+            </button>
+            <div class="chatbot">
+                <header>
+                    <!-- <h2>Bot de Asistencia</h2> -->
+                    <img class="logo-img" src="./web/images/logoDulccini.png" alt=""/>
+                    <span class="lets-icons--close-round custom-chatbot-close-btn"></span>
+                </header>
+                <ul class="chatbox">
+                    <li class="chat incoming">
+                        <span class="solar--chef-hat-heart-outline"></span>
+                        <p>¿Qué tal?&#128075&#129302<br>¡Comencemos con un saludo!<br>Pruebe escribiendo: 'Hola'</p>
+                    </li>
+                    <div class="chat-input">
+                        <textarea placeholder="¡Hola!" required></textarea>
+                        <span id="send-btn" class="carbon--send-filled"></span>
+                    </div>
+                </ul>
+            </div>
+        </div>
 
         <footer class="page-footer">
             <div class="footer-content-wrapper">

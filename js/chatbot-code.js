@@ -73,6 +73,9 @@ function main() {
             // Obtiene el intent de la pregunta del usuario
             let intent = firstIntent ? intents['Hola'] : 
                         (messageElement.textContent === 'Revisar nuevamente las solicitudes' ? intents['Necesito ayuda'] : intents[messageElement.textContent]);
+            if(messageElement.textContent == "Hacer pedido" || messageElement.textContent == "Solicitar contacto con un asesor") {
+                 window.location = 'https://wa.link/t887dr';
+            }
             firstIntent = false;
             if (!intent) {
                 console.error(`No se encontró un intent para '${messageElement.textContent}'`);

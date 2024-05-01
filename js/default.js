@@ -2,6 +2,7 @@ $(document).ready(function() {
     const header2 = $('#_header');
     const mainBanner = $('.home-banner.main-banner');
     const navList = $('.sections-nav-list');
+    const mobileMenu = $('.menu-mobile');
     let i = 0;
     let i2 = 0;
     let isTyping = false;
@@ -37,8 +38,19 @@ $(document).ready(function() {
 
     if($(window).width() < 769) {
         navList.addClass('hide-element');
+        mobileMenu.removeClass('hide-element');
+        mobileMenu.on('click', function(e) {
+            e.preventDefault();
+            navList.toggleClass('megamenu-mobile-open');
+            navList.toggleClass('hide-element');
+        });
+        $('.nav-list-link').on('click', function() {
+            navList.removeClass('megamenu-mobile-open');
+            navList.addClass('hide-element');
+        });
     } else {
         navList.removeClass('hide-element');
+        mobileMenu.addClass('hide-element');
     }
 
     $(document).scroll(function(){

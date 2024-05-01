@@ -19,6 +19,10 @@
     animation: fadeIn 0.5s;
 }
 
+.videogame-btn span {
+    font-size: 2.3rem;
+}
+
 .videogame-body-container {
     transition: .3s;
     position: relative;
@@ -42,7 +46,6 @@
     justify-content: center;
     transition: all 0.2s ease;
 }
-
   
 .content {
     max-width: 90rem;
@@ -773,6 +776,36 @@
 }
 
 @media (max-width: 769px) {
+
+    .menu-mobile {
+        position: absolute;
+        top: 33px;
+        left: 30px;
+        border: none;
+        font-size: 2.3rem;
+        background: transparent;
+        color: #733A70;
+    }
+    
+    .megamenu-mobile-open {
+        position: absolute;
+        display: flex !important;
+        align-items: baseline;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        background: #FEFFF2;
+        width: 15rem;
+        top: 97px;
+        left: 0;
+        height: 100vh;
+        box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.38);
+-webkit-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.38);
+-moz-box-shadow: 4px 0px 5px 0px rgba(0,0,0,0.38);
+    }
+
+    .videogame-btn span {
+        font-size: 2.3rem;
+    }
     h2 {
         font-size: 42px !important;
     }

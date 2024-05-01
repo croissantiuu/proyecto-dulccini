@@ -86,6 +86,7 @@ $(document).ready(function() {
 
 
     musicBtn.click();
+    infoBtn.click();
 
     if ($(window).width() < 769) {
         setTimeout(function() {
