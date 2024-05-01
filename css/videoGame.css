@@ -1,2 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
---------
+body {
+    background-color: #FEFFF2;
+}
+
+.videogame-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.game-keyboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    background: white;
+    border: #733A70 solid 8px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.word-label {
+    width: 100%;
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 2vh;
+    line-height: 2;
+    color: #733A70;
+}
+
+.key {
+    width: 3rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    border: #FAF2F0 solid 5px;
+    background: #FEFFF2;
+    color: #733A70;
+    margin: .25rem;
+    cursor: pointer;
+}
+
+.videogame-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vg-image {
+    max-width: 30rem;
+    max-height: 100rem;
+    border-radius: 20px;
+    border: #733A70 solid 8px;
+}
+
+button:disabled {
+    filter: brightness(0.8);
+}
+
+@media (max-width: 769px) {
+    .vg-image {
+        max-width: 20rem;
+    }
+    .key {
+        width: 1.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+        border: #FAF2F0 solid 2px;
+        background: #FEFFF2;
+        color: #733A70;
+        margin: .1rem;
+        cursor: pointer;
+    }
+    .word-label {
+        font-size: 3rem;
+    }
+}

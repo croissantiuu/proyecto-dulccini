@@ -28,7 +28,7 @@ class Game {
 
 $(document).ready(function() {
     let correctWordLabel = $('.word-label');
-    let treeImageView = $('.tree-image-view');
+    let imageView = $('.vg-image');
     let scoreLabel = $('.score-label');
 
     let letterButtons = $('.key');
@@ -73,30 +73,38 @@ $(document).ready(function() {
         let wordWithSpacing = letters.join(' ');
         correctWordLabel.text(wordWithSpacing);
         scoreLabel.text(`Triunfos: ${totalWins}, derrotas: ${totalLosses}`);
-        treeImageView.attr('src', `Tree ${currentGame.incorrectMovesRemaining}.png`);
+        imageView.attr('src', `../web/images/videogame/sprite_${(currentGame.incorrectMovesRemaining - 7) * -1}.png`);
     }
 
     letterButtons.click(function() {
         $(this).prop('disabled', true);
         let letterString = $(this).text();
         let letter = letterString.toLowerCase();
-        currentGame.guessedLetters.push(letter);
+        currentGame.playerGuessed(letter); // Llama a playerGuessed en lugar de empujar la letra directamente
         updateGameState();
     });
+    
 
     function updateGameState() {
         if (currentGame.incorrectMovesRemaining === 0) {
             totalLosses++;
             newRound();
-        } else if (currentGame.word === currentGame.formattedWord) {
+        } else if (!currentGame.formattedWord.includes('_')) {
+            confetti({
+                particleCount: 300,
+                spread: 170,
+                origin: {y: .6}
+            });
             totalWins++;
             newRound();
         } else {
             updateUI();
         }
-    }
+    }    
 
     function enableLetterButtons(enable) {
         letterButtons.prop('disabled', !enable);
     }
+
+    console.log(currentGame.incorrectMovesRemaining);
 });

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Adivina la palabra</title>
+    <link rel="stylesheet" type="text/css" href="../css/videoGame.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
 </head>
 <body>
     <div class="videogame-container-wrapper">
+        <span class="word-label"></span>
         <div class="videogame-body-container">
             <div class="videogame-image-container">
                 <img class="vg-image" src="" alt="">
@@ -47,7 +51,6 @@
                     <button class="key">M</button>
                 </div>
             </div>
-            <span class="word-label"></span>
             <span class="score-label"></span>
         </div>
     </div>
