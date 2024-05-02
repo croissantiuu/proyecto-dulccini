@@ -29,6 +29,7 @@ class Game {
 
 
 $(document).ready(function() {
+    let isMusicActive = false;
     let correctWordLabel = $('.word-label');
     let imageView = $('.vg-image');
     let scoreLabel = $('.score-label');
@@ -37,6 +38,7 @@ $(document).ready(function() {
     let closeInfoBtn = $('.btn-close');
     let musicBtn = $('.music-on');
     const infoWrapper = $('.popup-info-wrapper');
+    const congratsMessage = $('.congrats-message');
 
     let letterButtons = $('.key');
 
@@ -48,7 +50,7 @@ $(document).ready(function() {
         "delicioso",
         "amor",
         "chocolate",
-        "pateleria",
+        "pasteleria",
         "mascabado",
         "bicarbonato",
         "cobertura",
@@ -76,6 +78,11 @@ $(document).ready(function() {
         e.preventDefault();
         infoWrapper.addClass('hide-btn');
         btnPressedAudio.play();
+        if(!isMusicActive) {
+            videoGameMusic.play();
+            videoGameMusic.volume = 0.2;
+            isMusicActive = true;
+        }
     });
 
     musicBtn.on('click', function(e) {
@@ -108,6 +115,13 @@ $(document).ready(function() {
             enableLetterButtons(true);
             updateUI();
         } else {
+            console.log(totalWins);
+            if(totalWins >= 10) {
+                infoBtn.click();
+                $('.info-message').addClass('hide-btn');
+                congratsMessage.removeClass('hide-btn');
+
+            }
             enableLetterButtons(false);
         }
     }

@@ -13,7 +13,7 @@
     },
     "Soy nuevo aquí": {
         "name": "newCostumerIntent",
-        "prompt": "Test",
+        "prompt": "¡Bienvenido a Dulccini!",
         "title": "¡Gracias por visitar Dulccini Cancún!",
         "options": ["¡Quiero estar al día con las promociones!", "Información de contacto"]
     },

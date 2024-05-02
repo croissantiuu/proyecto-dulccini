@@ -777,6 +777,37 @@
 
 @media (max-width: 769px) {
 
+    .home-banner-wrapper {
+        display: flex;
+        flex-direction: column !important;
+    }
+    .main-banner-message {
+        padding: 40px;
+        text-align: center;
+    }
+
+
+    #us-message {
+        margin-top: 2rem;
+        border-bottom: #733A70 2px solid;
+    }
+
+    .hide-us-information {
+        height: 15rem;
+        overflow: hidden;
+    }
+
+    .us-message-btn {
+        font-size: 3rem;
+        color: #733A70;
+        transform: rotate(90deg);
+    }
+
+    .us-section-information {
+        gap: 1px;
+
+    }
+
     .menu-mobile {
         position: absolute;
         top: 33px;

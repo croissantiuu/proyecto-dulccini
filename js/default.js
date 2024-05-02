@@ -37,6 +37,7 @@ $(document).ready(function() {
     
 
     if($(window).width() < 769) {
+        $('#us-message').addClass('hide-us-information');
         navList.addClass('hide-element');
         mobileMenu.removeClass('hide-element');
         mobileMenu.on('click', function(e) {
@@ -47,6 +48,9 @@ $(document).ready(function() {
         $('.nav-list-link').on('click', function() {
             navList.removeClass('megamenu-mobile-open');
             navList.addClass('hide-element');
+        });
+        $('.us-message-btn').on('click', function(){
+            $('#us-message').removeClass('hide-us-information');
         });
     } else {
         navList.removeClass('hide-element');

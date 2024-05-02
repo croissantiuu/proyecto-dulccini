@@ -3,42 +3,42 @@
         "name": "Pastel de chocolate",
         "price": 250.00,
         "imageUrl": "./web/images/chcolate-cake.jpeg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Brownies y fresas",
         "price": 250.00,
         "imageUrl": "./web/images/combo-brownies.jpg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Pastel personalizado",
         "price": 350.00,
         "imageUrl": "./web/images/Pastel-op.jpg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Roles de canela",
         "price": 150.00,
         "imageUrl": "./web/images/rol-canela.jpg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Muffins",
         "price": 120.00,
         "imageUrl": "./web/images/Muffins.jpeg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Flan de queso de bola",
         "price": 220.00,
         "imageUrl": "./web/images/flan.jpg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     },
     {
         "name": "Pay japonés",
         "price": 230.00,
         "imageUrl": "./web/images/cheescake.jpeg",
-        "productUrl": "#product1"
+        "productUrl": "#take-order"
     }
 ]
