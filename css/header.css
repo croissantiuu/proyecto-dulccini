@@ -12,6 +12,7 @@
     max-height: 14.063rem;
     width: auto;
     height: auto;
+    transition: .3s all;
 }
 
 .sections-nav-list {
@@ -44,7 +45,7 @@
 
 .sections-nav-list li a {
     color: #733A70;
-    font-size: 32px;
+    font-size: 24px;
     transition: 0.3s;
     text-decoration: none;
 }

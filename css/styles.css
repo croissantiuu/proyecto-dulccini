@@ -232,10 +232,16 @@
     /*  */
 }
 
+.logo-nav-scrolled {
+    max-width: 11.063rem !important;
+    max-height: 11.063rem !important;
+
+}
+
 #us-message, #us-message-2 {
     text-align: center;
     color: #733A70;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: "Francois One", sans-serif; 
     width: 70%;
 }

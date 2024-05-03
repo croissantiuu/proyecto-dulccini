@@ -4,6 +4,7 @@ let scrollBefore = 0;
 let lastScrollTop = 0;
 let isScrollingUp = false;
 let slidingCount = 0; 
+let logoNav = $('.logo-nav');
 
 $(document).ready(function() {
     // navigationBar.css('top', header.outerHeight(true));
@@ -33,9 +34,11 @@ $(document).scroll(function(){
     if (scrollStatus < 0 && scroll >= 160){ // scroll down 
         // Page header with solid color white 
         header.addClass('header-scrolled'); 
+        logoNav.addClass('logo-nav-scrolled');
     } else if (scrollStatus > 0 && scroll <= 160) { // scroll up 
         // Page header with transparent 
-        header.removeClass('header-scrolled'); 
+        header.removeClass('header-scrolled');
+        logoNav.removeClass('logo-nav-scrolled'); 
     } 
     //Function exclusive Product view 
     scrollBefore = scroll; 

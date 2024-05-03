@@ -42,10 +42,10 @@ body {
     font-family: "Francois One", sans-serif; 
 }
 .popup-info-wrapper h3 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .popup-info-wrapper p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .btn-close {
 
@@ -247,7 +247,7 @@ h1 {
         font-size: 1rem;
     }
     .popup-info-wrapper p {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .popup-info-wrapper {
@@ -309,6 +309,29 @@ h1 {
         font-size: 1.5rem;
     }
 
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .game-keyboard  {
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .videogame-container-wrapper {
+        margin-top: 2rem;
+    }
+    .key {
+        width: 2rem;
+        height: 3rem;
+        font-size: 1.8rem;
+    }
+    .vg-image {
+        width: 18rem;
+    }
+    .word-label {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-height: 300px) {
