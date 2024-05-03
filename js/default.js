@@ -23,7 +23,7 @@ $(document).ready(function() {
     });
 
     $('a').click(function(event) {
-        event.preventDefault();
+        // event.preventDefault();
     
         let target = $(this.hash);
         if (target.length) {

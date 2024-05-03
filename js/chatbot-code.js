@@ -27,7 +27,7 @@ function main() {
         //Crea un elemento li con base a un mensaje y una clase
         const chatLi = document.createElement("li");
         chatLi.classList.add("chat", className);
-        let chatContent = className === "outgoing" ? `<p></p>` : `<span class="material-symbols-outlined">smart_toy</span><p></p>`;
+        let chatContent = className === "outgoing" ? `<p></p>` : `<span class="solar--chef-hat-heart-outline"></span><p></p>`;
         chatLi.innerHTML = chatContent;
         //Validar que el texto ingresado se tome como solo texto
         chatLi.querySelector("p").textContent = message;

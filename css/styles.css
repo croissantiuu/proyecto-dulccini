@@ -121,6 +121,7 @@
     flex-direction: column;
 }
 
+
 .main-banner-message span {
     color: #733A70;
     transform: rotate(90deg);
@@ -654,6 +655,10 @@
     font-size: 4rem;
 }
 
+.page-footer-social-links li a {
+    text-decoration: none;
+}
+
 .page-footer-social-links {
     display: flex;
     flex-direction: column;
@@ -773,6 +778,12 @@
 
 .hide-element {
     display: none !important;
+}
+
+@media (min-width: 769px) {
+    .main-banner-message:nth-child(2) {
+        margin-left: 3rem;
+    }
 }
 
 @media (max-width: 769px) {
